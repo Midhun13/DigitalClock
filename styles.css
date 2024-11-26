@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('pexels-neale-lasalle-197020-631477.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.clock {
+    text-align: center;
+    color: #00ff99;
+    font-size: 80px;
+    text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 20px #00ff99;
+    border: 2px solid #00ff99;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 30px rgba(0, 255, 153, 0.5), 0 0 60px rgba(0, 255, 153, 0.5);
+}
+
+#date {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+#ampm {
+    font-size: 40px;
+    color: #ffffff;
+    margin: 10px 0;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+header {
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+}
+
+header h1, header p {
+    color: #ffffff;
+    text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 20px #00ff99;
+}
+
+footer {
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+}
+
+footer p {
+    color: #ffffff;
+    text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 20px #00ff99; /
+}
+
+#toggleFormat {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#toggleFormat:hover {
+    background-color: #00ff99;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+#toggleFormat:focus {
+    outline: none; 
+}
+
+
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-on-load {
+    animation: fadeInUp 1s ease forwards; 
+}
